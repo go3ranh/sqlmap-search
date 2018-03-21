@@ -20,7 +20,7 @@ while True:
     count = 0
     path = 'goeranh'
     print('\n\n\n\n')
-    print('enter the name(or fragments of it) of the file[leave blank to search all]')
+    print(bcolors.OKGREEN + 'enter the name(or fragments of it) of the file[leave blank to search all]' + bcolors.ENDC)
     fname = str(raw_input('->'))
     print('enter a search string')
     string = str(raw_input('->'))
