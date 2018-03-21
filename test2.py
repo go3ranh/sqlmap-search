@@ -7,6 +7,14 @@ class bcolors:
     WARNING = '\033[93m'
     FAIL = '\033[91m'
     ENDC = '\033[0m'
+    def set_color(self, color):
+        if(color == "g"):
+            print(self.OKGREEN)
+        elif(color == "b"):
+            print(self.OKBLUE)
+
+    def end_color(self):
+        print(self.ENDDC)
 
 while True:
     count = 0
@@ -60,5 +68,5 @@ while True:
         print(str(count) + ' results in'),
     time2 = time.time()
     time3 = time2 - time1
-    print(str(time3) + " seconds")
+    print("Your search took " + str(time3) + " seconds")
     print('\033[0m')
